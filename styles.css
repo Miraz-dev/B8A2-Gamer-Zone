@@ -190,6 +190,59 @@ body{
 }
 
 
+/* ******************* */
+/* Online Game Section */
+/* ******************** */
+.online-games-section{
+    background-color: lightskyblue;
+}
+
+.online-game-text-box{
+    text-align: center;
+    margin-bottom: 48px;
+}
+.online-game-header{
+    font-size: 3rem;
+    color: #0B0223;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.online-game-header span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    /* background-clip: text; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.og-desc{
+    color: #534C64;
+    font-size: 1.125rem;
+    line-height: 30px; /* 166.667% */
+}
+
+
+.four-cards{
+    display: flex;
+    gap: 24px;
+}
+
+.card{
+    flex: 1;
+}
+
+.card img{
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.card p{
+    color: #534C64;
+
+font-size: 1.25rem;
+
+font-weight: 500;
+line-height: 30px; /* 150% */
+}
 
 
 
@@ -207,7 +260,8 @@ body{
 @media screen and (max-width: 426px) {
 
     .header,
-    .nav-list
+    .nav-list,
+    .four-cards
     {
         flex-direction: column;
     }
@@ -243,13 +297,33 @@ body{
     .hero-buttons{
         justify-content: space-around;
     }
+
+
+    /* online game section */
+    .online-game-header{
+        font-size: 1.8rem;
+    }
+
+    .og-desc{
+        font-size: 0.9rem;
+    }
+
+    .card img{
+        margin-bottom: 3px;
+    }
+
+    .card p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
 }
 
 
 
 @media screen and (min-width:426px) and (max-width:769px) {
     .header,
-    .nav-list
+    .nav-list,
+    .four-cards
     {
         flex-direction: column;
     }
@@ -282,4 +356,23 @@ body{
     .hero-buttons{
         justify-content: space-around;
     }
+
+
+        /* online game section */
+        .online-game-header{
+            font-size: 1.8rem;
+        }
+    
+        .og-desc{
+            font-size: 0.9rem;
+        }
+    
+        .card img{
+            margin-bottom: 3px;
+        }
+    
+        .card p{
+            font-size: 0.8rem;
+            text-align: center;
+        }
 }
