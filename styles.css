@@ -195,6 +195,7 @@ body{
 /* ******************** */
 .online-games-section{
     background-color: lightskyblue;
+    margin-bottom: 120px;
 }
 
 .online-game-text-box{
@@ -245,6 +246,69 @@ line-height: 30px; /* 150% */
 }
 
 
+/* ******************* */
+/* Online Game Section */
+/* ******************** */
+
+.play-instantly{
+    background-color: lightsalmon;
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.play-text-content{
+    flex: 1;
+    padding: 100px;
+    background-color: lightcyan;
+}
+
+.play-title {
+    text-align: right;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 125%;
+    margin-bottom: 24px;
+}
+
+.play-title span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    /* background-clip: text; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.play-desc {
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 166.667%;
+}
+
+.play-img-content{
+    flex: 1;
+    position: relative;
+}
+
+.play-img-sm{
+    width: 50%;
+    position: absolute;
+    bottom: -60px;
+    left: -75px;
+}
+
+.play-img-big{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
 
 
 /* ******************* */
@@ -261,7 +325,8 @@ line-height: 30px; /* 150% */
 
     .header,
     .nav-list,
-    .four-cards
+    .four-cards,
+    .play-instantly
     {
         flex-direction: column;
     }
@@ -316,14 +381,41 @@ line-height: 30px; /* 150% */
         font-size: 0.8rem;
         text-align: center;
     }
+
+
+    /* play instantly section */
+    .play-text-content{
+        padding: 0;
+    }
+
+    .play-title,
+    .play-desc{
+        text-align: center;
+    }
+
+    .play-img-content{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .play-img-big{
+        width: 80%;
+    }
+
+    .play-img-sm{
+        bottom: -40px;
+        left: 0px;
+    }
 }
 
 
 
-@media screen and (min-width:426px) and (max-width:769px) {
+@media screen and (min-width:426px) and (max-width:966px) {
     .header,
     .nav-list,
-    .four-cards
+    .four-cards,
+    .play-instantly
     {
         flex-direction: column;
     }
@@ -375,4 +467,30 @@ line-height: 30px; /* 150% */
             font-size: 0.8rem;
             text-align: center;
         }
+
+    /* play instantly section */
+    /* play instantly section */
+    .play-text-content{
+        padding: 0;
+    }
+
+    .play-title,
+    .play-desc{
+        text-align: center;
+    }
+
+    .play-img-content{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .play-img-big{
+        width: 80%;
+    }
+
+    .play-img-sm{
+        bottom: -40px;
+        left: 0px;
+    }
 }
