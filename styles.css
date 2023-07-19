@@ -96,6 +96,7 @@ body{
 .youtube, .tiktok{
     height: 1.5rem;
     width: 1.5rem;
+    cursor: pointer;
 }
 
 .youtube{
@@ -116,7 +117,7 @@ body{
 /* Hero Section ****** */
 /* ******************** */
 .hero{
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     display: flex;
     align-items: center;
     margin-bottom: 120px;
@@ -194,7 +195,7 @@ body{
 /* Online Game Section */
 /* ******************** */
 .online-games-section{
-    background-color: lightskyblue;
+    /* background-color: lightskyblue; */
     margin-bottom: 120px;
 }
 
@@ -234,6 +235,11 @@ body{
 .card img{
     width: 100%;
     margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.card img:hover{
+    opacity: 0.8;
 }
 
 .card p{
@@ -251,7 +257,7 @@ line-height: 30px; /* 150% */
 /* ******************** */
 
 .play-instantly{
-    background-color: lightsalmon;
+    /* background-color: lightsalmon; */
     display: flex;
     align-items: center;
     gap: 120px;
@@ -261,7 +267,7 @@ line-height: 30px; /* 150% */
 .play-text-content{
     flex: 1;
     padding: 100px;
-    background-color: lightcyan;
+    /* background-color: lightcyan; */
 }
 
 .play-title {
@@ -312,7 +318,7 @@ line-height: 30px; /* 150% */
     flex-wrap: wrap;
     gap: 30px;
 
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     margin-bottom: 120px;
 }
 .btns{
@@ -349,7 +355,7 @@ line-height: 30px; /* 150% */
 }
 
 .footer-content{
-    background-color: steelblue;
+    /* background-color: steelblue; */
     /* margin: 120px 500px; */
     /* display: flex;
     flex-direction: column;
